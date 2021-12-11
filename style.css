@@ -1,9 +1,83 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+/* General */
+
+html {
     box-sizing: border-box;
 }
 
-body{
-    margin:0;
+body {
+    margin: 0;
     min-height: 100vh;
+    font-family: 'Secular One', sans-serif;
+    background-color: rgba(209, 208, 208, 0.759);
+
+}
+
+/* appHeader */
+
+.appHeader {
+    text-align: center;
+    display: flex;
+    min-height: 15vh;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    width: 100%;
+
+}
+
+
+h1 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+/* appBody */
+
+/* Loader */
+.appBody {
+    display: flex;
+    min-height: 85vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.loader {
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Img Container */
+
+.img-container {
+    /* width: auto; */
+    margin: 10px;
+    align-items: center;
+    max-width: 500px;
+    
+}
+
+.img-container img {
+    height:auto;
+    width: 100%;
+    box-shadow: 2px 3px rgba(128, 128, 128, 0.402);
+}
+.img-container img:hover {
+
+
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transform: scale(1.1);
 
 }
